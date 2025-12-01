@@ -7,3 +7,5 @@ then
 else
   echo "You're already a root user"
   fi 
+  
+  dnf install mysql -y
