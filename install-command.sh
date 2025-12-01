@@ -18,5 +18,5 @@ else
  echo "Installing MySQL is Failure.."
  exit 1
 fi  
-else 
- echo "Mysql is already installed.. Nothing to do."
+ else 
+   echo "Mysql is already installed.. Nothing to do."
