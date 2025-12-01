@@ -3,9 +3,9 @@
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
-then
+ then
   echo "ERROR:: Please run the script with root user"
-else
+ else
   echo "You're already a root user"
 fi 
 
