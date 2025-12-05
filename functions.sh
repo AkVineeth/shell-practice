@@ -7,5 +7,5 @@ then
    echo "ERROR:: Please run this script with root access"
    exit 1
 else
-  echo "You are not running with root access"
+  echo "You are running with root access"
 fi
