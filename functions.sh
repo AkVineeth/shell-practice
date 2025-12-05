@@ -51,7 +51,7 @@ if [ $? -ne 0 ]
       echo "Installing Nginx is Failure"
       exit 1
    fi
-   else
-    echo " Nginx is installed ..Nothing to do"
+  else
+  echo " Nginx is installed ..Nothing to do"
 fi
    
