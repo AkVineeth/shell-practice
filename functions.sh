@@ -29,7 +29,7 @@ dnf list installed python
 if [ $USERID -ne 0 ]
 then
  echo "Python is not insatlled going to install it"
-  dnf install mysql -y
+  dnf install python -y
   if [ $? -eq 0 ] 
   then
     echo "Installing Python is Successful"
@@ -43,7 +43,7 @@ dnf list installed nginx
 if [ $USERID -ne 0 ]
  then
   echo "Nginx is not insatlled going to install it"
-   dnf install mysql -y
+   dnf install nginx -y
    if [ $? -eq 0 ] 
     then
       echo "Installing Nginx is Successful"
