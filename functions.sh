@@ -29,28 +29,29 @@ dnf list installed python
 if [ $? -ne 0 ]
 then
  echo "Python is not insatlled going to install it"
-  dnf install python -y
-  if [ $? -eq 0 ] 
-  then
+ dnf install python -y
+ if [ $? -eq 0 ] 
+ then
     echo "Installing Python is Successful"
-  else
+ else
    echo "Installing Python is Failure"
    exit 1
   fi
-  else
+ else
   echo " Python is installed ..Nothing to do"
+
 dnf list installed nginx
 if [ $? -ne 0 ]
  then
   echo "Nginx is not insatlled going to install it"
-   dnf install nginx -y
-   if [ $? -eq 0 ] 
+  dnf install nginx -y
+  if [ $? -eq 0 ] 
     then
       echo "Installing Nginx is Successful"
     else
       echo "Installing Nginx is Failure"
       exit 1
-   fi
+  fi
   else
   echo " Nginx is installed ..Nothing to do"
 fi
