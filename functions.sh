@@ -10,12 +10,23 @@ else
   echo "You are running with root access"
 fi
 
-dnf install mysql -y
+dnf list installed mysql
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
-   echo "Installing MySQL is Successful"
+   echo "MYSQL is not installed.. Going to install"
+   dnf install mysql -y
+
+   if [ $? -eq 0 ]
+   then
+       echo "Installing MySQL is Successful"
+   else
+       echo "Installing MYSQL is Failure"
+       exit 1
+   fi
 else
-   echo "Installing MYSQL is Failure"
-   exit 1
+   echo "MYSQL is already installed Nothing to do"
 fi
+
+
+
