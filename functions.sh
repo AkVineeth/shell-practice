@@ -11,7 +11,7 @@ else
 fi
 
 dnf list installed mysql
-if [ $USERID -ne 0 ]
+if [ $? -ne 0 ]
 then
   echo "MYSQL is not insatlled going to install it"
   dnf install mysql -y
@@ -26,7 +26,7 @@ then
     echo " MYSQL is installed ..Nothing to do"
 
 dnf list installed python
-if [ $USERID -ne 0 ]
+if [ $? -ne 0 ]
 then
  echo "Python is not insatlled going to install it"
   dnf install python -y
@@ -40,7 +40,7 @@ then
   else
   echo " Python is installed ..Nothing to do"
 dnf list installed nginx
-if [ $USERID -ne 0 ]
+if [ $? -ne 0 ]
  then
   echo "Nginx is not insatlled going to install it"
    dnf install nginx -y
