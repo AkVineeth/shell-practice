@@ -21,5 +21,34 @@ if [ $USERID -ne 0 ]
    fi
    else
     echo " MYSQL is installed ..Nothing to do"
+
+dnf list installed python
+if [ $USERID -ne 0 ]
+ then
+  echo "Python is not insatlled going to install it"
+   dnf install mysql -y
+   if [ $? -eq 0 ] 
+    then
+      echo "Installing Python is Successful"
+    else
+      echo "Installing Python is Failure"
+      exit 1
+   fi
+   else
+    echo " Python is installed ..Nothing to do"
+dnf list installed nginx
+if [ $USERID -ne 0 ]
+ then
+  echo "Nginx is not insatlled going to install it"
+   dnf install mysql -y
+   if [ $? -eq 0 ] 
+    then
+      echo "Installing Nginx is Successful"
+    else
+      echo "Installing Nginx is Failure"
+      exit 1
+   fi
+   else
+    echo " Nginx is installed ..Nothing to do"
 fi
    
