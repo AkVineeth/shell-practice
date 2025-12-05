@@ -16,9 +16,9 @@ if [ $USERID -ne 0 ]
     then
       echo "Installing MYSQL is Successful"
     else
-     echo "Installing MYSQL is Failure"
-    exit 1
-  fi
+      echo "Installing MYSQL is Failure"
+      exit 1
+   fi
    else
     echo " MYSQL is installed ..Nothing to do"
 fi
